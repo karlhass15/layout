@@ -1,0 +1,331 @@
+/*blue background and encompasses entire page*/
+body {
+    background: #acc7dc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* Standard syntax */
+}
+/*white section in the middle*/
+#pageContainer {
+    width: 75%;
+    height: auto;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    overflow: auto;
+    padding-bottom: 3em;
+    @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+}
+
+header {
+    /*/margin (-)*bodycolor showing at the top*!/*/
+    margin-top: -2em;
+    font-size: 1em;
+    height: 10em;
+}
+
+.headerImage {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    border-radius: 2em;
+    float: left;
+    margin-left: 1.5em;
+    width: 10%;
+    height: auto;
+}
+
+.plauditZip {
+    border-radius: 3px;
+    margin-right: 5em;
+    margin-top: .7em;
+    margin-bottom: .7em;
+    background-color: #78b3a4;
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    height: 3em;
+}
+
+.zipText {
+    color: white;
+    text-decoration: none;
+}
+
+/*header phone number*/
+.phoneNumber {
+    padding-top: 3em;
+    float: right;
+    width: 24%;
+    height: auto;
+    padding-right: 2em;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    background-color: #314a5d;
+    border-radius: 2px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navButtons {
+    background-color: #314a5d;
+    color: white;
+    border: none;
+    margin-left: 5em;
+    width: 100%
+}
+/*text on the right side after nav*/
+aside ul {
+    margin-left: -1em;
+}
+
+aside li {
+    font-size: 1.05em;
+    list-style-type: none;
+    margin-bottom: .3em;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+section {
+    float: right;
+    width: 70%;
+    height: auto;
+    padding-right: 10%;
+}
+
+/*links with different colors in PSD*/
+.greenLink {
+    color: #78b3a4;
+}
+.blackLink {
+    color: black;
+}
+
+/*FONT SIZING */
+h1 {
+    font-size: 2.2em;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.7em;
+    width: 50%;
+    font-weight: normal;
+
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    color: #78b3a4;
+    font-size: 1.3em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+p {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+/*1st paragraph in  section*/
+.firstParagraph {
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+/*Middle paragraph and image div floats*/
+/*#midContainer {*/
+    /*width: 100%;*/
+    /*height: auto;*/
+/*}*/
+
+
+.midBodyText {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding-right: 1em;
+}
+/*picture in body*/
+.midBodyPic {
+    float: right;
+    width: 19em;
+    height: auto;
+}
+
+.lightBox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightBox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lightBox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
+}
+
+
+
+
+
+
+/*last paragraph*/
+.thirdParagraph {
+    float: left;
+    width: 100%;
+}
+.thirdParagraph li {
+    line-height: 1.5;
+}
+
+/*button on bottom of page*/
+.karlBtn {
+    background-color: #4c7390 ;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 3px 3px 0 0 black;
+    width: 8em;
+    height: 1.8em;
+
+}
+
+
+footer {
+    background-color: black;
+    font-size: .6em;
+    height: 20em;
+    color: white;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom: -1em;
+}
+
+footer p {
+    margin-left: 10em;
+    margin-top: 5px;
+}
+
+#contactForm {
+    width: 15%;
+    margin-left: 10em;
+}
+
+.inputs {
+    border-radius: 2px;
+    margin-bottom: .5em;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 950px) {
+
+    aside {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    aside ul {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section {
+        width: 80%;
+    }
+    .midBodyText {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .midBodyPic {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    .plauditZip {
+        font-size: .9em;
+
+    }
+
+    .headerImage {
+        width: 20%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 735px) {
+    .plauditZip {
+        font-size: .7em;
+        height: 4em;
+    }
+    .phoneNumber {
+        width: 30%
+    }
+    /*nav {*/
+        /*width: 50%;*/
+    /*}*/
+    .navButtons{
+        margin-left: 3em;
+    }
+    section {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .phoneNumber {
+        width: 45%
+    }
+    .navButtons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plauditZip {
+        font-size: .6em;
+        height: 4em;
+    }
+    section {
+        width: 95%;
+    }
+
+
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plaudit</title>
+
+    <link rel="stylesheet" href="/vendors/jquery.mobile.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+
+
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+</head>
+ <body>
+
+    <!--main page container for the cutters and params-->
+
+    <div id="pageContainer">
+
+        <!--top of the page logo and number-->
+                        <header>
+
+                            <img class="headerImage" src="http://i.imgur.com/vcAMByc.jpg">
+
+
+
+                            <div class="phoneNumber">555-321-6789
+                               <a href="/assets/styles/Plaudit.zip" download="Plaudit.zip"><button class="plauditZip">Download Plaudit Challenge Zip</button></a>
+
+                            </div>
+                        </header>
+
+        <!--navigation at top of the page-->
+            <nav>
+                <!--download zip file for code-->
+
+                 <!--Home nav-->
+                <a href="http://www.plauditdesign.com/index.html/" target="_blank"><button class="navButtons">Home</button></a>
+
+                <!--Services nav-->
+                     <a href="http://www.plauditdesign.com/minneapolis-web-design-portfolio.html/" target="_blank"><button class="navButtons">Services</button></a>
+
+                <!--Products nav-->
+                         <a href="http://www.plauditdesign.com/design-services.html/" target="_blank"><button class="navButtons">Product</button></a>
+
+                <!--about us nav-->
+                                 <a href="http://www.plauditdesign.com/web-design-company.html/" target="_blank"><button class="navButtons">About Us</button></a>
+
+                 <!--Contact us nav-->
+                                          <a href="http://www.plauditdesign.com/contact-web-designers-minneapolis.html/" target="_blank"><button class="navButtons">Contact Us</button></a>
+            </nav>
+
+            <div class="bodyContainer">
+                <aside>
+                <ul>
+                <!--li bullets are on display none css-->
+                    <li><b>Service</b></li>
+                    <li>Drafting</li>
+                    <li>Engineering</li>
+                    <li>3D Printing</li>
+                    <li>Laser Cutting</li>
+                </ul>
+                </aside>
+            </div>
+
+        <section>
+                    <!--first paragraph and header-->
+                <div class="firstParagraph">
+                   <h1> Headline Style</h1>
+                       <p>Example paragraph ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque euismod mi.
+                          Link styles
+                          <a href="http://www.plauditdesign.com">default link,</a>
+                          <a href="https://www.github.com/karlhass15/">visited link,</a>
+                          <a class="greenLink" href="https://www.fillmurray.com">hovered link,</a>
+                          <a class="blackLink" href="https://www.facebook.com/ReclaimedArtCraftsman">active link.</a>
+                            feugiat porttitor. Vivamus et nulla nec augue placerat tristique. Aenean non urna id sapien
+                            pharetra adipiscing.  </p>
+                   <h4>“Example quote. Dolor sit amet, consectetur adipiscing elit. Nunc rhoncus, menus non placerat
+                        imperdiet.”</h4>
+                </div>
+
+
+                        <h2>Another Header
+                         </h2>
+                     <p class="midBodyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida,
+                        arcu sit amet lobortis tristique, nisi nulla cursus diam, sed sodales ipsum sem non dolor.
+                         Pellentesque fermentum suscipit pellentesque.
+                     </p>
+
+
+                            <a href="http://i.imgur.com/qJe328n.jpg?1">
+                             <img class="midBodyPic" src="http://i.imgur.com/LJgXZgV.png?1">
+                             </a>
+
+                            <a href="#_" class="lightBox" id="img1">
+                                <img class="midBodyPic" src="http://i.imgur.com/LJgXZgV.png?1">
+                            </a>
+
+
+
+                <div class="thirdParagraph">
+                   <h3> A Final Header
+
+                   </h3>
+                      <p>
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida, arcu
+                         sit amet lobortis tristique, nisi nulla cursus diam, sed sodales ipsum sem non dolor.
+                         Pellentesque fermentum suscipit pellentesque. Donec gravida, felis non tincidunt
+                         laoreet, quam sem feugiat est, quis dapibus elit libero eget diam.
+                      </p>
+                        <!--bulleted list in final paragraph-->
+                           <ul>
+                             <li>Consectetur adipiscing elit</li>
+                             <li>Etiam viverra</li>
+                             <li>Williamsburg fashion axe adipisicing, qui banh mi odio 90's selvage. Odio
+                                 nisi godard, intelligentsia twee hoodie accusamus duis.</li>
+                           </ul>
+
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida, arcu sit
+                          amet lobortis tristique, nisi nulla cursus diam, sed sodales ipsum sem non dolor.
+                          Pellentesque fermentum suscipit pellentesque. Donec gravida, felis non tincidunt
+                          laoreet, quam sem feugiat est, quis dapibus elit libero eget diam.
+                      </p>
+
+                        <!--button on bottom of page-->
+
+                            <!--<button type="button"> <a href="https://karlhassresume.com/"></a>Hire Karl</button>-->
+                    <a href="https://www.linkedin.com/in/karlhass/"><button class="karlBtn">Hire Karl</button></a>
+
+                </div>
+
+
+
+        </section>
+    </div>
+
+
+                    <footer> <p>&copy; Company Awesome</p>
+                        <p>Message Us</p>
+
+                        <div id="contact">
+                                              <form id="contactForm" method="POST" action="/contact">
+                                                  <input class="inputs" type="text" placeholder="Name" name="name">
+                          <input class="inputs" type="text" placeholder="Email" name="email">
+                                <textarea class="inputs" type="text" placeholder="Message" value="Message" name="message"
+                                          required></textarea>
+                            <button type="submit btn" onclick="window.location.href='index.html'">Submit</button>
+                                            </form>
+                        </div>
+                    </footer>
+ </body>
+</html>

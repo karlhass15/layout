@@ -1,0 +1,27 @@
+{
+  "name": "plaudit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "flexbox": "0.0.3",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.0",
+    "jquery": "^2.1.4",
+    "jquery-mobile": "^1.4.1",
+    "mongoose": "^4.3.6",
+    "nodemailer": "^2.0.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "path": "^0.12.7"
+  },
+  "description": ""
+}
