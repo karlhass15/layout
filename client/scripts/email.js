@@ -1,21 +1,12 @@
 
 $(document).ready(function(){
 
-    $('#informationTab a').click(function (e) {
-        if($(this).parent('li').hasClass('active')){
-            $( $(this).attr('href') ).hide();
-        }
-        else {
-            e.preventDefault();
-            $(this).tab('show');
-        }
-    });
 
-    $("#contactForm").submit(function(event){
-        event.preventDefault();
-        var values = {};
-
-    });
+    //$("#contactForm").submit(function(event){
+    //    event.preventDefault();
+    //    var values = {};
+    //
+    //});
 //submit button in email.html
     $("#contactForm").submit(addContact);
 
@@ -31,8 +22,8 @@ function addContact() {
 
     });
     //clearing the fields after submit in email.html
-    $(this).find("input[type=text]").val("");
-    $(this).find("textarea").val("");
+    $('#contactForm').find("input[type=text]").val("");
+    $('#contactForm').find("textarea").val("");
 
     //sends addedContact's info to database
     $.ajax({
