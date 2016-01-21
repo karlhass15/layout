@@ -28,6 +28,7 @@ header {
     height: 10em;
 }
 
+/*picture of me*/
 .headerImage {
     margin-top: 3em;
     margin-bottom: 1em;
@@ -38,6 +39,7 @@ header {
     height: auto;
 }
 
+/*download button for zip file*/
 .plauditZip {
     border-radius: 3px;
     margin-right: 5em;
@@ -61,6 +63,7 @@ header {
     padding-right: 2em;
 }
 
+/*nav bar */
 nav {
     display: flex;
     flex-flow: row wrap;
@@ -83,6 +86,7 @@ aside ul {
     margin-left: -1em;
 }
 
+/*text in aside menu*/
 aside li {
     font-size: 1.05em;
     list-style-type: none;
@@ -95,6 +99,7 @@ aside {
     height: auto;
 }
 
+/*contains and wraps the 3 paragraphs in the center*/
 section {
     float: right;
     width: 70%;
@@ -117,8 +122,10 @@ h1 {
 }
 h2 {
     font-size: 1.7em;
-    width: 50%;
+    width: 100%;
     font-weight: normal;
+    margin-bottom: 1em;
+
 
 }
 h3 {
@@ -149,29 +156,32 @@ p {
     /*height: auto;*/
 /*}*/
 
+.secondHeader {
+    width: 50%;
+    float: left;
+}
 
+/*middle paragraph text*/
 .midBodyText {
     float: left;
-    width: 50%;
+    width: 100%;
     height: auto;
     padding-right: 1em;
 }
-/*picture in body*/
-.midBodyPic {
+
+.picSpace {
     float: right;
-    width: 19em;
+    width: 45%;
     height: auto;
 }
-
-
-
-body, html {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
 /* Styles the thumbnail */
+
+.lightbox  {
+    float: right;
+    width: 46%;
+    height: auto;
+    margin-top: 2em;
+}
 
 a.lightbox img {
     border: 3px solid white;
@@ -188,7 +198,6 @@ a.lightbox img {
     top: -100%;
     width: 100%;
     background: rgba(0,0,0,.7);
-    width: 100%;
     opacity: 0;
     -webkit-transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
@@ -310,7 +319,7 @@ a.lightbox-close:after {
 
 }
 
-
+/*its a footer*/
 footer {
     background-color: black;
     font-size: .6em;
@@ -319,7 +328,7 @@ footer {
     margin-left: -1em;
     margin-right: -1em;
     margin-bottom: -1em;
-    text-align: left
+    text-align: left;
 ;
 }
 
@@ -329,6 +338,7 @@ footer p {
     text-align: left;
 }
 
+/*contact form and email template for sendgrid*/
 #contactForm {
     width: 15%;
     margin-left: 10em;
@@ -338,6 +348,18 @@ footer p {
     border-radius: 2px;
     margin-bottom: .5em;
     font-size: 1.2em;
+}
+
+
+/*!!!!!!!||||||  MEDIA SECTION |||||||||!!!!!!!!!!!!!!!  WEB CSS STOP*/
+
+/*BREAK POINT OF NORMAL VIEW CONTENT*/
+@media screen and (max-width: 1180px) {
+
+    .secondHeader {
+        width: 100%;
+        float: left;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -385,13 +407,14 @@ footer p {
 
 }
 
+/*HELPS NAV BAR TEXT STARTS TO BREAK DOWN*/
 @media screen and (max-width: 735px) {
     .plauditZip {
         font-size: .7em;
         height: 4em;
     }
     .phoneNumber {
-        width: 30%
+        width: 30%;
     }
     /*nav {*/
         /*width: 50%;*/
@@ -400,13 +423,16 @@ footer p {
         margin-left: 3em;
     }
     section {
-        width: 90%
+        width: 87%;
     }
+
+
 }
 
+/*FOR PHONE TYPE MEDIA DEVICES AND LANSCAPE*/
 @media screen and (max-width: 500px) {
     .phoneNumber {
-        width: 45%
+        width: 45%;
     }
     .navButtons {
         margin-left: auto;
@@ -417,8 +443,12 @@ footer p {
         height: 4em;
     }
     section {
-        width: 95%;
+        width: 87%;
     }
+    a. lightbox img {
+        width: 15em;
+    }
+
 
 
 }
