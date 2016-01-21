@@ -8,10 +8,6 @@ module.exports = function(grunt){
             client: {
                 src: 'client/scripts/app.js',
                 dest: 'server/public/assets/scripts/app.min.js'
-            },
-            emiail: {
-                src: 'client/scripts/email.js',
-                dest: 'server/public/assets/scripts/email.min.js'
             }
         },
         copy: {
