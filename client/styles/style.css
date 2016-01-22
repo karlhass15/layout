@@ -79,7 +79,7 @@ nav {
     color: white;
     border: none;
     margin-left: 5em;
-    width: 100%
+    width: 90%
 }
 /*text on the right side after nav*/
 aside ul {
@@ -360,6 +360,12 @@ footer p {
         width: 100%;
         float: left;
     }
+}
+@media screen and (min-width: 724px) and (max-width: 1024px) {
+    .phonenumber {
+        width: 35%;
+    }
+
 }
 
 @media screen and (max-width: 950px) {
