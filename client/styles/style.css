@@ -1,9 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans');
 
-
-
-
-
 /*blue background and encompasses entire page*/
 body {
     background: #acc7dc; /* For browsers that do not support gradients */
@@ -14,11 +10,9 @@ body {
 
   /*brings in font from @import and using throughout body  */
     font-family: 'Open Sans', sans-serif;
-  /*change margin from -margin in pageContainer  */
-    margin: 0;
     padding: 0;
-
 }
+
 /*white section in the middle*/
 #pageContainer {
     width: 75%;
@@ -27,7 +21,6 @@ body {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -5px;
     overflow: auto;
     padding: 1.5em 1.5em 4em 1.5em;
     text-align: left;
@@ -42,19 +35,22 @@ header {
 
 /*picture of me*/
 .headerImage {
-    margin-top: 3em;
+    margin-top: 1.7em;
     margin-bottom: 1em;
-    border-radius: 10px;
+    border-radius: 8px;
     float: left;
     margin-left: 1.5em;
-    width: 10%;
-    height: auto;
+    width: 7em;
     box-shadow:  2px 2px 5px #959599;
+}
+
+.headerImage:hover {
+    box-shadow:  3px 3px 7px #959599
 }
 
 /*download button for zip file*/
 .layoutZip {
-    border-radius: 3px;
+    border-radius: 4px;
     margin-right: 5em;
     margin-top: .7em;
     margin-bottom: .7em;
@@ -66,7 +62,9 @@ header {
     box-shadow:  2px 2px 5px #959599;
 }
 
-
+.layoutZip:hover {
+    box-shadow:  3px 3px 7px #959599
+}
 
 /*header phone number*/
 .phoneNumber {
@@ -82,11 +80,7 @@ header {
 /*Navigation Horizontal bar at the top HAS ITS OWN CSS FILE*/
 
 
-/*text on the right side after nav*/
-
-
 /*text in aside menu*/
-
 aside ul {
     margin-left: -1em;
 }
@@ -97,17 +91,19 @@ aside {
     height: auto;
     margin-top: 25px;
 }
+
 /*aside top line*/
 .services {
     font-size: 1.3em;
     color: #aa863a;
     text-decoration: none;
-
 }
+
 aside ul li{
     list-style-type: none;
     margin-bottom: .3em;
 }
+
 aside ul a{
     font-size: 1.1em;
     list-style-type: none;
@@ -115,6 +111,7 @@ aside ul a{
     text-decoration: none;
     width: 80%;
 }
+
 aside ul.hover {
     text-decoration: none;
 }
@@ -131,6 +128,7 @@ section {
 .greenLink {
     color: #78b3a4;
 }
+
 .blackLink {
     color: #283018;
 }
@@ -142,6 +140,7 @@ h1 {
     margin-top: 20px;
     color: #729f98;
 }
+
 h2 {
     font-size: 1.7em;
     width: 100%;
@@ -162,6 +161,7 @@ h4 {
     padding-left: 1.5em;
     text-align: center;
 }
+
 p {
     font-size: 1.1em;
     font-weight: normal;
@@ -199,8 +199,8 @@ p {
     width: 45%;
     height: auto;
 }
-/* Styles the thumbnail */
 
+/* Styles the thumbnail */
 .lightbox  {
     float: right;
     width: 46%;
@@ -209,15 +209,14 @@ p {
 }
 
 a.lightbox img {
+    border-radius: 2px
     border: 3px solid white;
     box-shadow: 0px 0px 8px rgba(0,0,0,.3);
     float: right;
     width: 19em;
-    height: auto;
 }
 
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
 .lightbox-target {
     position: fixed;
     top: -100%;
@@ -231,8 +230,8 @@ a.lightbox img {
     overflow: hidden;
 }
 
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
+/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in
+transition and makes it responsive using a combination of margin and absolute positioning */
 .lightbox-target img {
     margin: auto;
     position: absolute;
@@ -252,7 +251,6 @@ a.lightbox img {
 }
 
 /* Styles the close link, adds the slide down transition */
-
 a.lightbox-close {
     display: block;
     width:50px;
@@ -271,7 +269,6 @@ a.lightbox-close {
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:before {
     content: "";
     display: block;
@@ -288,7 +285,6 @@ a.lightbox-close:before {
 }
 
 /* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:after {
     content: "";
     display: block;
@@ -305,7 +301,6 @@ a.lightbox-close:after {
 }
 
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
 .lightbox-target:target {
     opacity: 1;
     top: 0;
@@ -318,16 +313,15 @@ a.lightbox-close:after {
 }
 
 .lightbox-target:target a.lightbox-close {
-    top: 0px;
+    top: 0;
 }
-
-
 
 /*last paragraph*/
 .thirdParagraph {
     float: left;
     width: 100%;
 }
+
 .thirdParagraph li {
     line-height: 1.5;
 }
@@ -337,11 +331,15 @@ a.lightbox-close:after {
     background-color: #729f98 ;
     color: white;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     width: 8em;
     height: 1.8em;
     box-shadow:  2px 2px 5px #959599;
     margin-top: 2em;
+}
+
+.karlBtn:hover {
+    box-shadow:  3px 3px 7px #959599
 }
 
 /*its a footer*/
@@ -354,29 +352,58 @@ footer {
     margin-right: -1em;
     margin-bottom: -1em;
     text-align: left;
-    /*clear both floats*/
-    /*clear: both;*/
-
-}
-
-footer p {
-    margin-left: 10em;
-    margin-top: 5px;
-    text-align: left;
+    padding: 2.5em;
 }
 
 /*contact form and email template for sendgrid*/
 #contactForm {
-    width: 15%;
-    margin-left: 10em;
+    width: 20%;
+    margin-left: 7em;
+    margin-top: 1em;
 }
 
 .inputs {
-    border-radius: 2px;
-    margin-bottom: .5em;
+    border-radius: 3px;
+    margin-bottom: .7em;
+    font-size: 1.4em;
+    color: #aa863a;
+    box-shadow:  2px 2px 5px #aa863a;
+    width: 100%;
+}
+
+.inputs:hover {
+    box-shadow:  3px 3px 7px #aa863a;
+}
+
+.textArea {
+    border-radius: 3px;
+    margin-bottom: .7em;
+    font-size: 1.4em;
+    color: #aa863a;
+    box-shadow:  2px 2px 5px #aa863a;
+    width: 100%;
+    height: 5em;
+}
+
+.textArea:hover {
+    box-shadow:  3px 3px 7px #aa863a;
+}
+
+.submitButton {
+    box-shadow:  2px 2px 5px #aa863a;
+    width: 8em;
+    height: 3em;
+    border-radius: 3px;
+    background-color: #729f98;
+    color: white;
     font-size: 1.2em;
 }
 
+.submitButton:hover {
+    box-shadow:  3px 3px 7px #aa863a;
+}
+
+/*\\\\\\\\\||||||||||||||////////////////*/
 
 /*!!!!!!!||||||  MEDIA SECTION |||||||||!!!!!!!!!!!!!!!  WEB CSS STOP*/
 
@@ -387,12 +414,18 @@ footer p {
         width: 100%;
         float: left;
     }
+    #contactForm {
+        width: 35%
+    }
 }
+
 @media screen and (min-width: 724px) and (max-width: 1024px) {
     .phonenumber {
         width: 35%;
     }
-
+    section {
+        width: 65%
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -412,6 +445,7 @@ footer p {
     section {
         width: 80%;
     }
+
     .midBodyText {
         width: 100%;
         margin-left: auto;
@@ -428,36 +462,29 @@ footer p {
         width: 100%;
     }
 
-    .plauditZip {
+    .layoutZip {
         font-size: .9em;
-
     }
-
-    .headerImage {
-        width: 15%;
-        height: auto;
-    }
-
 }
 
 /*HELPS NAV BAR TEXT STARTS TO BREAK DOWN*/
 @media screen and (max-width: 735px) {
-    .plauditZip {
-        font-size: .7em;
+    .layoutZip {
+        font-size: .9em;
         height: 4em;
     }
+
     .phoneNumber {
         width: 30%;
     }
-    /*nav {*/
-        /*width: 50%;*/
-    /*}*/
 
     section {
         width: 87%;
     }
 
-
+    #contactForm {
+        width: 50%
+    }
 }
 
 /*FOR PHONE TYPE MEDIA DEVICES AND LANSCAPE*/
@@ -466,17 +493,31 @@ footer p {
         width: 45%;
     }
 
-    .plauditZip {
-        font-size: .6em;
+    .layoutZip {
+        font-size: .9em;
         height: 4em;
     }
+
     section {
         width: 87%;
     }
-    a. lightbox img {
+
+    a.lightbox img {
         width: 15em;
     }
 
+    .headerImage {
+        width: 6em;
+    }
 
+    h1 {
+        font-size: 2.05em;
+    }
 
+    #contactForm {
+        width: 75%;
+        margin-left: 4em;
+    }
 }
+
+
