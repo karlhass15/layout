@@ -8,6 +8,10 @@ module.exports = function(grunt){
             client: {
                 src: 'client/scripts/app.js',
                 dest: 'server/public/assets/scripts/app.min.js'
+            },
+            nav: {
+                src: 'client/scripts/nav.js',
+                dest: 'server/public/assets/scripts/nav.min.js'
             }
         },
         copy: {
@@ -28,8 +32,14 @@ module.exports = function(grunt){
                 cwd: "client",
                 src: 'styles/style.css',
                 dest: 'server/public/assets/'
-            }
+            },
 
+            navStyle: {
+                expand: true,
+                cwd: "client",
+                src: 'styles/nav.css',
+                dest: 'server/public/assets/'
+            }
 
         }
     });

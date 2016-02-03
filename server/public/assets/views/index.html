@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<meta charset="UTF-8">-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plaudit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Karl Hass Layout</title>
 
     <link rel="stylesheet" href="/vendors/jquery.mobile.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/nav.css">
+
 
 
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
 
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="/assets/scripts/app.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/nav.min.js"></script>
 </head>
  <body>
- <div class="lightbox-target" id="goofy">
-     <img src="http://i.imgur.com/qJe328n.jpg?1"/>
-     <a class="lightbox-close" href="#"></a>
- </div>
+    <!--lightbox in the body to cover whole page and display close X-->
+        <div class="lightbox-target" id="goofy">
+            <img src="http://i.imgur.com/qJe328n.jpg?1"/>
+              <a class="lightbox-close" href="#"></a>
+        </div>
     <!--main page container for the cutters and params-->
 
     <div id="pageContainer">
 
         <!--top of the page logo and number-->
-                        <header>
+            <header>
 
-                            <img class="headerImage" src="http://i.imgur.com/vcAMByc.jpg">
+                <img class="headerImage" src="http://i.imgur.com/vcAMByc.jpg">
+                    <div class="phoneNumber">320-282-4575
+                        <!--download zip file for code-->
+                        <a href="/assets/styles/Plaudit.zip" download="layout.zip"><button class="layoutZip">Download Layout Code</button></a>
 
-                            <div class="phoneNumber">555-321-6789
-                               <a href="/assets/styles/Plaudit.zip" download="Plaudit.zip"><button class="plauditZip">Download Plaudit Challenge Zip</button></a>
+                    </div>
+            </header>
 
-                            </div>
-                        </header>
+
+        <nav id='cssmenu'>
+            <ul>
+                <li><a href="https://www.github.com/karlhass15"  target="_blank">Services</a></li>
+                <li class='active has-sub'><a href='#'>Portfolio</a>
+                    <ul>
+                        <li class='has-sub'><a href="http://pinder.herokuapp.com" target="_blank">Gallerys</a>
+                            <ul>
+                                <li><a href='https://www.reclaimedartcraftsman.com'>Gallery 1</a></li>
+                                <li><a href='https://www.pinder.herokuapp.com'>Gallery 2</a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'>Social Media</a>
+                            <ul>
+                                <li><a href='https://www.facebook.com/ReclaimedArtCraftsman'>Facebook</a></li>
+                                <li><a href='https://www.instagram.com/reclaimedartcraftsman'>Instagram</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!--About nav-->
+                <li><a href="http://www.reclaimedartcraftsman.com"  target="_blank"><span>About</span></a></li>
+                <!--Contact nav-->
+                <li><a href="http://www.karlhassresume.com"  target="_blank"><span>Contact</span></a></li>
+            </ul>
+        </nav>
 
         <!--navigation at top of the page-->
-            <nav>
-                <!--download zip file for code-->
 
-                 <!--Home nav-->
-                <a href="http://www.plauditdesign.com/index.html/" target="_blank"><button class="navButtons">Home</button></a>
 
-                <!--Services nav-->
-                     <a href="http://www.plauditdesign.com/minneapolis-web-design-portfolio.html/" target="_blank"><button class="navButtons">Services</button></a>
 
-                <!--Products nav-->
-                         <a href="http://www.plauditdesign.com/design-services.html/" target="_blank"><button class="navButtons">Product</button></a>
-
-                <!--about us nav-->
-                                 <a href="http://www.plauditdesign.com/web-design-company.html/" target="_blank"><button class="navButtons">About Us</button></a>
-
-                 <!--Contact us nav-->
-                                          <a href="http://www.plauditdesign.com/contact-web-designers-minneapolis.html/" target="_blank"><button class="navButtons">Contact Us</button></a>
-            </nav>
-
-            <div class="bodyContainer">
                 <aside>
-                <ul>
+                    <ul>
                 <!--li bullets are on display none css-->
-                    <li><b>Service</b></li>
-                        <li>Drafting</li>
-                            <li>Engineering</li>
-                        <li>3D Printing</li>
-                    <li>Laser Cutting</li>
-                </ul>
+                        <li class="services"><b>Services</b></li>
+                            <li><a href="#firstParagraph">Design</a></li>
+                                <li><a href="#secondParagraph">Engineering</a></li>
+                                    <li><a href="#thirdParagraph">Solutions</a></li>
+                                        <li><a href="#contact">Crime Fighting</a></li>
+                    </ul>
                 </aside>
-            </div>
 
         <section>
                     <!--first paragraph and header-->
-                <div class="firstParagraph">
+                <div id="firstParagraph" class="firstParagraph">
                    <h1> Headline Style</h1>
                        <p>Example paragraph ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque euismod mi.
                           Link styles
-                          <a href="http://www.plauditdesign.com">default link,</a>
+                          <a href="https://www.primeacademy.io/">default link,</a>
                                 <a href="https://www.github.com/karlhass15/">visited link,</a>
                                     <a class="greenLink" href="https://www.fillmurray.com">hovered link,</a>
                           <a class="blackLink" href="https://www.facebook.com/ReclaimedArtCraftsman">active link.</a>
@@ -82,7 +99,7 @@
                         imperdiet.”</h4>
                 </div>
 
-                <div class="secondParagraph">
+                <div id="secondParagraph" class="secondParagraph">
 
 
 
@@ -97,7 +114,7 @@
 
                         <div class="picSpace">
                             <a class="lightbox" href="#goofy">
-                                <img  src="http://i.imgur.com/LJgXZgV.png?1"/>
+                                <img  src="http://i.imgur.com/xt6Bs2q.jpg?1"/>
                              </a>
 
                         </div>
@@ -106,7 +123,7 @@
 
 
 
-                <div class="thirdParagraph">
+                <div id="thirdParagraph" class="thirdParagraph">
                    <h3> A Final Header
 
                    </h3>
@@ -133,7 +150,7 @@
                         <!--button on bottom of page-->
 
                             <!--<button type="button"> <a href="https://karlhassresume.com/"></a>Hire Karl</button>-->
-                    <a href="https://www.linkedin.com/in/karlhass/"><button class="karlBtn">Hire Karl</button></a>
+                    <a href="https://www.linkedin.com/in/karlhass"><button class="karlBtn">Hire Karl</button></a>
 
                 </div>
 

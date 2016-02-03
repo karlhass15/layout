@@ -1,23 +1,35 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+
 /*blue background and encompasses entire page*/
 body {
     background: #acc7dc; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(top, #ebf2f7 1%, #acc7dc 100%); /* Standard syntax */
+    background: -webkit-linear-gradient(top, #ebf2f7 1%, #aa863a 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #ebf2f7 1%, #aa863a 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #ebf2f7 1%, #aa863a 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #ebf2f7 1%, #aa863a 100%); /* Standard syntax */
+
+  /*brings in font from @import and using throughout body  */
+    font-family: 'Open Sans', sans-serif;
+  /*change margin from -margin in pageContainer  */
+    margin: 0;
+    padding: 0;
+
 }
 /*white section in the middle*/
 #pageContainer {
     width: 75%;
-    height: auto;
+    /*remove hight auto*/
+    /*height: auto;*/
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -10px;
     margin-bottom: -5px;
     overflow: auto;
-    padding-bottom: 3em;
-    @import url('http://fonts.googleapis.com/css?family=Open+Sans');
+    padding: 1.5em 1.5em 4em 1.5em;
     text-align: left;
 }
 
@@ -32,24 +44,26 @@ header {
 .headerImage {
     margin-top: 3em;
     margin-bottom: 1em;
-    border-radius: 2em;
+    border-radius: 10px;
     float: left;
     margin-left: 1.5em;
     width: 10%;
     height: auto;
+    box-shadow:  2px 2px 5px #959599;
 }
 
 /*download button for zip file*/
-.plauditZip {
+.layoutZip {
     border-radius: 3px;
     margin-right: 5em;
     margin-top: .7em;
     margin-bottom: .7em;
-    background-color: #78b3a4;
+    background-color: #729f98;
     color: white;
     font-size: 1.2em;
     width: 100%;
     height: 3em;
+    box-shadow:  2px 2px 5px #959599;
 }
 
 
@@ -61,42 +75,48 @@ header {
     width: 24%;
     height: auto;
     padding-right: 2em;
+    color: #283018
 }
 
-/*nav bar */
-nav {
-    display: flex;
-    flex-flow: row wrap;
-    /* This aligns items to the end line on main-axis */
-    background-color: #314a5d;
-    border-radius: 2px;
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.navButtons {
-    background-color: #314a5d;
-    color: white;
-    border: none;
-    margin-left: 5em;
-    width: 90%
-}
+
+/*Navigation Horizontal bar at the top HAS ITS OWN CSS FILE*/
+
+
 /*text on the right side after nav*/
-aside ul {
-    margin-left: -1em;
-}
+
 
 /*text in aside menu*/
-aside li {
-    font-size: 1.05em;
-    list-style-type: none;
-    margin-bottom: .3em;
+
+aside ul {
+    margin-left: -1em;
 }
 
 aside {
     float: left;
     width: 20%;
     height: auto;
+    margin-top: 25px;
+}
+/*aside top line*/
+.services {
+    font-size: 1.3em;
+    color: #aa863a;
+    text-decoration: none;
+
+}
+aside ul li{
+    list-style-type: none;
+    margin-bottom: .3em;
+}
+aside ul a{
+    font-size: 1.1em;
+    list-style-type: none;
+    color: #aa863a;
+    text-decoration: none;
+    width: 80%;
+}
+aside ul.hover {
+    text-decoration: none;
 }
 
 /*contains and wraps the 3 paragraphs in the center*/
@@ -112,25 +132,29 @@ section {
     color: #78b3a4;
 }
 .blackLink {
-    color: black;
+    color: #283018;
 }
 
 /*FONT SIZING */
 h1 {
     font-size: 2.2em;
     font-weight: normal;
+    margin-top: 20px;
+    color: #729f98;
 }
 h2 {
     font-size: 1.7em;
     width: 100%;
     font-weight: normal;
-    margin-bottom: 1em;
-
-
+    margin-bottom: .5em;
+    color: #729f98;
 }
+
 h3 {
     font-size: 1.5em;
+    color: #729f98;
 }
+
 h4 {
     color: #78b3a4;
     font-size: 1.3em;
@@ -142,6 +166,7 @@ p {
     font-size: 1.1em;
     font-weight: normal;
     line-height: 1.5em;
+    color: #283018;
 }
 
 /*1st paragraph in  section*/
@@ -234,7 +259,7 @@ a.lightbox-close {
     height:50px;
     box-sizing: border-box;
     background: white;
-    color: black;
+    color: #283018;
     text-decoration: none;
     position: absolute;
     top: -80px;
@@ -252,7 +277,7 @@ a.lightbox-close:before {
     display: block;
     height: 30px;
     width: 1px;
-    background: black;
+    background: #283018;
     position: absolute;
     left: 26px;
     top:10px;
@@ -269,7 +294,7 @@ a.lightbox-close:after {
     display: block;
     height: 30px;
     width: 1px;
-    background: black;
+    background: #283018;
     position: absolute;
     left: 26px;
     top:10px;
@@ -309,19 +334,19 @@ a.lightbox-close:after {
 
 /*button on bottom of page*/
 .karlBtn {
-    background-color: #4c7390 ;
+    background-color: #729f98 ;
     color: white;
     border: none;
     border-radius: 2px;
-    box-shadow: 3px 3px 0 0 black;
     width: 8em;
     height: 1.8em;
-
+    box-shadow:  2px 2px 5px #959599;
+    margin-top: 2em;
 }
 
 /*its a footer*/
 footer {
-    background-color: black;
+    background-color: #283018;
     font-size: .6em;
     height: 20em;
     color: white;
@@ -329,7 +354,9 @@ footer {
     margin-right: -1em;
     margin-bottom: -1em;
     text-align: left;
-;
+    /*clear both floats*/
+    /*clear: both;*/
+
 }
 
 footer p {
@@ -407,7 +434,7 @@ footer p {
     }
 
     .headerImage {
-        width: 20%;
+        width: 15%;
         height: auto;
     }
 
@@ -425,9 +452,7 @@ footer p {
     /*nav {*/
         /*width: 50%;*/
     /*}*/
-    .navButtons{
-        margin-left: 3em;
-    }
+
     section {
         width: 87%;
     }
@@ -440,10 +465,7 @@ footer p {
     .phoneNumber {
         width: 45%;
     }
-    .navButtons {
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     .plauditZip {
         font-size: .6em;
         height: 4em;
